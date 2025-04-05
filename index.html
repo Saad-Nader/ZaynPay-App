@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zayn Pay</title>
-  <style>
+ <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
     * {
       box-sizing: border-box;
     }
- 
+
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
@@ -22,17 +22,26 @@
     }
 
     header {
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 149px 0;
-    }
+  background: #bced28;
+  display: flex;
+  flex-direction: column; /* ✅ خلي العناصر عمودية */
+  justify-content: center;
+  align-items: center;
+  padding: 145px 0;
+}
 
-    header img {
-      width: 180px;
-      max-width: 80%;
-    }
+header img {
+  width: 280px;
+  max-width: 100%;
+}
+
+.logo-caption {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 12px;
+  font-weight: 50;
+  font-family: 'Arial', sans-serif;
+}
 
     .container {
       text-align: center;
@@ -42,10 +51,10 @@
 
     .download-btn {
       display: block;
-      margin: 15px auto;
-      padding: 12px 24px;
+      margin: 5px auto;
+      padding: 10px 24px;
       font-size: 18px;
-      background: #6c63ff;
+      background: #919193;
       color: white;
       border: none;
       border-radius: 8px;
@@ -61,23 +70,53 @@
       transform: scale(1.05);
     }
 
-    footer {
-      background-color: rgb(103, 102, 102);
+    .social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-link {
+  font-size: 24px; /* 👈 حجم الأيقونات */
+  color: #555;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #d4ff00; /* 👈 اللون الأخضر لواتساب */
+}
+
+.icon-link i {
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover i {
+  transform: scale(1.2); /* 👈 تأثير تكبير عند التمرير على الأيقونة */
+}
+
+footer {
+      background-color: rgb(208, 208, 208);
       text-align: center;
       padding: 10px;
       font-size: 14px;
     }
+
 
     @media (min-width: 768px) {
       .download-btn {
         font-size: 20px;
       }
     }
+
+
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="ZaynPay">
+    <p class="logo-caption">شكراً لإستخدامكم تطبيق زين</p>
   </header>
 
   <div class="container">
@@ -88,11 +127,22 @@
     <a class="download-btn" href="http://t.ly/B5Re0" download>Download Now</a>
 
     <p>تطبيق خاص بماكينه SUNMI P2</p>
-    <a class="download-btn" href="link3.apk" download>Download Now</a>
+    <a class="download-btn" href="Saad Nader.apk" download>Download Now</a>
   </div>
-
+  
   <footer>
-    ...🤍 Powered by Saad Nader
+    <div class="social-icons">
+      <a href="https://wa.me/201010444143" target="_blank" class="icon-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://t.me/+201010444143" target="_blank" class="icon-link">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="Saad Nader.apk" download class="icon-link">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+    <p>...🤍 Powered by Saad Nader</p>
   </footer>
 </body>
 </html>
